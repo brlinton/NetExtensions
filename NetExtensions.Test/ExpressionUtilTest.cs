@@ -6,7 +6,7 @@ using Xunit;
 
 namespace NetExtensions.Test
 {
-    public class ObjectUtilTest
+    public class ExpressionUtilTest
     {
         public class TestClass
         {
@@ -20,7 +20,7 @@ namespace NetExtensions.Test
         [Fact]
         public void CanGetPropertyNameFromStringProperty()
         {
-            var result = ObjectUtil.GetPropertyName<TestClass>(x => x.PropertyOne);
+            var result = ExpressionUtil.GetPropertyName<TestClass>(x => x.PropertyOne);
 
             Assert.Equal("PropertyOne", result);
         }
@@ -28,7 +28,7 @@ namespace NetExtensions.Test
         [Fact]
         public void CanGetPropertyNameFromIntProperty()
         {
-            var result = ObjectUtil.GetPropertyName<TestClass>(x => x.PropertyTwo);
+            var result = ExpressionUtil.GetPropertyName<TestClass>(x => x.PropertyTwo);
 
             Assert.Equal("PropertyTwo", result);
         }
@@ -36,7 +36,7 @@ namespace NetExtensions.Test
         [Fact]
         public void CanGetPropertyNameFromDoubleProperty()
         {
-            var result = ObjectUtil.GetPropertyName<TestClass>(x => x.PropertyThree);
+            var result = ExpressionUtil.GetPropertyName<TestClass>(x => x.PropertyThree);
 
             Assert.Equal("PropertyThree", result);
         }
@@ -44,7 +44,7 @@ namespace NetExtensions.Test
         [Fact]
         public void CanGetPropertyNameFromTypeProperty()
         {
-            var result = ObjectUtil.GetPropertyName<TestClass>(x => x.PropertyFour);
+            var result = ExpressionUtil.GetPropertyName<TestClass>(x => x.PropertyFour);
 
             Assert.Equal("PropertyFour", result);
         }
@@ -52,7 +52,7 @@ namespace NetExtensions.Test
         [Fact]
         public void CanGetPropertyNameFromComplexProperty()
         {
-            var result = ObjectUtil.GetPropertyName<TestClass>(x => x.PropertyFive);
+            var result = ExpressionUtil.GetPropertyName<TestClass>(x => x.PropertyFive);
 
             Assert.Equal("PropertyFive", result);
         }

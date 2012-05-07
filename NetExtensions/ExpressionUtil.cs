@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace NetExtensions
 {
-    public static class ObjectUtil
+    public static class ExpressionUtil
     {
         public static string GetPropertyName<T>(Expression<Func<T, object>> expression) where T : class
         {
