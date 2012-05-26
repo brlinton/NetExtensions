@@ -9,7 +9,18 @@ namespace NetExtensions
     {
         public static string ToCsv(this IEnumerable<string> strings)
         {
+            if (strings == null)
+                return string.Empty;
+
             return string.Join(",", strings.ToArray());
+        }
+
+        public static string ToPipeDelimitedString(this IEnumerable<string> strings)
+        {
+            if (strings == null)
+                return string.Empty;
+
+            return string.Join("|", strings.ToArray());
         }
     }
 }

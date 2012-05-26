@@ -30,7 +30,7 @@ namespace NetExtensions.Test
                 MethodCounter++;
             }
         }
-
+        
         [Fact]
         public void AsIfOfCorrectTypeInvokesMethod()
         {
@@ -46,7 +46,8 @@ namespace NetExtensions.Test
         {
             var tester = "not a tester object";
 
-            tester.AsIf<ITester>(x => x.Method());
+            // This would be impossible if it tried to run it as a string
+            tester.AsIf<ITester>(x => x.Method()); 
         }
     }
 }

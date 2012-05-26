@@ -38,5 +38,45 @@ namespace NetExtensions.Test
 
             Assert.Equal(string.Empty, csv);
         }
+
+        [Fact]
+        public void CanCreatePipeDelimitedListFromStringEnumerable()
+        {
+            var strings = new [] { "a", "b", "c"};
+
+            var result = strings.ToPipeDelimitedString();
+
+            Assert.Equal("a|b|c", result);
+        }
+
+        [Fact]
+        public void OneValueCreatesNoPipeFromStringEnumerable()
+        {
+            var strings = new [] { "a" };
+
+            var result = strings.ToPipeDelimitedString();
+
+            Assert.Equal("a", result);
+        }
+
+        [Fact]
+        public void EmptyListReturnsStringEmptyForPipeDelimitedString()
+        {
+            var strings = new string[0];
+
+            var result = strings.ToPipeDelimitedString();
+
+            Assert.Equal(string.Empty, result);
+        }
+
+        [Fact]
+        public void NullReturnsStringEmptyForPipeDelimitedString()
+        {
+            IEnumerable<string> strings = null;
+
+            var result = strings.ToPipeDelimitedString();
+
+            Assert.Equal(string.Empty, result);
+        }
     }
 }
