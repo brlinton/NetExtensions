@@ -53,5 +53,7 @@ namespace NetExtensions.Test
             Assert.Equal(new TimeSpan(0, 0, 0, 0, 5), result);
             Assert.Equal(new TimeSpan(0, 0, 0, 0, 5).Milliseconds, result.Milliseconds);
         }
+
+        
     }
 }
