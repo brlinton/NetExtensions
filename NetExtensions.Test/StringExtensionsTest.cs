@@ -78,45 +78,5 @@ namespace NetExtensions.Test
 
             Assert.Equal(string.Empty, result);
         }
-
-        [Fact]
-        public void TryParseIntCanParseValidString()
-        {
-            var test = "5";
-
-            var result = test.TryParseInt();
-
-            Assert.Equal(5, result);
-        }
-
-        [Fact]
-        public void TryParseIntPullsNullFromInvalidString()
-        {
-            var test = "5a";
-
-            var result = test.TryParseInt();
-
-            Assert.Equal(null, result);
-        }
-
-        [Fact]
-        public void TryParseDoubleCanParseValidString()
-        {
-            var test = "5.45";
-
-            var result = test.TryParseDouble();
-
-            Assert.Equal(5.45, result);
-        }
-
-        [Fact]
-        public void TryParseDoublePullsNullFromInvalidString()
-        {
-            var test = "5a.434";
-
-            var result = test.TryParseInt();
-
-            Assert.Equal(null, result);
-        }
     }
 }

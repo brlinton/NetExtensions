@@ -22,20 +22,5 @@ namespace NetExtensions
 
             return string.Join("|", strings.ToArray());
         }
-
-        // http://blogs.msdn.com/b/ericlippert/archive/2012/08/14/out-parameters-and-linq-do-not-mix.aspx
-        public static int? TryParseInt(this string item)
-        {
-            int tmp;
-            bool success = int.TryParse(item, out tmp);
-            return success ? (int?)tmp : (int?)null;
-        }
-
-        public static double? TryParseDouble(this string item)
-        {
-            double tmp;
-            bool success = double.TryParse(item, out tmp);
-            return success ? (double?)tmp : (double?)null;
-        }
     }
 }
