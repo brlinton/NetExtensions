@@ -1,9 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetExtensions", "NetExtensions.csproj", "{FB63797A-0FCA-4A80-B49D-A552840F1260}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetExtensions.Test", "..\NetExtensions.Test\NetExtensions.Test.csproj", "{76C607E1-F0C1-442A-84B1-460F557D1847}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ABC7C1CF-DD40-4513-9259-E49DADD8F2C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FDADC409-57FD-4C65-B27B-DA9D627ED7E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,5 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76C607E1-F0C1-442A-84B1-460F557D1847} = {ABC7C1CF-DD40-4513-9259-E49DADD8F2C6}
+		{FB63797A-0FCA-4A80-B49D-A552840F1260} = {FDADC409-57FD-4C65-B27B-DA9D627ED7E9}
 	EndGlobalSection
 EndGlobal
