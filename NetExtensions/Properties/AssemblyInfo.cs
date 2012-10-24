@@ -8,11 +8,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("NetExtensions")]
 [assembly: AssemblyDescription("A handy set of extensions off of the BCL")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Brandon Linton")]
 [assembly: AssemblyProduct("NetExtensions")]
 [assembly: AssemblyCopyright("Copyright © Brandon Linton 2012")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
