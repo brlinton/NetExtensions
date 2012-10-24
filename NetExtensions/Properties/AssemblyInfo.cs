@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("NetExtensions")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A handy set of extensions off of the BCL")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("NetExtensions")]
-[assembly: AssemblyCopyright("Copyright © Brandon Linton  2012")]
+[assembly: AssemblyCopyright("Copyright © Brandon Linton 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
